@@ -22,6 +22,6 @@ from django.conf.urls.static import static # <- новый импорт обра
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('stock/', include(('stock.urls', 'stock'), namespace='stock')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # <- добавляем обработчик статики к списку урлов
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # <- добавляем обработчик статики к списку узлов
 
 
